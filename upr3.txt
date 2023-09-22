@@ -1,0 +1,35 @@
+s=str(input())
+a=len(s)
+k=0
+if s.count('E')==0 and s.count('J')==0 and s.count('S')==0 and s.count('Z')==0:
+    for i in range (0, a//2):
+        if s[i]==s[(a-1)-i]:
+            k=k+1
+    if k==(a//2):
+        print('da')
+    else:
+        print ('net')
+if s.count('E')>0 or s.count('J')>0 or s.count('S')>0 or s.count('Z')>0:
+    for i in range (0, a//2):
+        if s[i]=='E' and s[a-1-i]=='3':
+            k=k+1
+        if s[i]=='3' and s[a-1-i]=='E':
+            k=k+1
+        if s[i]=='J' and s[a-1-i]=='L':
+            k=k+1
+        if s[i]=='L' and s[a-1-i]=='J':
+            k=k+1
+        if s[i]=='S' and s[a-1-i]=='2':
+            k=k+1
+        if s[i]=='2' and s[a-1-i]=='S':
+            k=k+1
+        if s[i]=='Z' and s[a-1-i]=='5':
+            k=k+1
+        if s[i]=='5' and s[a-1-i]=='Z':
+            k=k+1
+        if s[i]==s[(a-1)-i]:
+            k=k+1
+    if k==(a//2):
+        print('da')
+    else:
+        print ('net')
