@@ -1,0 +1,14 @@
+A=input().split(' ')
+for i in range (0, len(A)):
+    A[i]=int(A[i])
+x=0
+for i in range (0, len(A)):
+    k=0
+    z=A[i]
+    for j in range (0, len(A)):
+        if z==A[j]:
+            k=k+1
+        if x<=k:
+            x=k
+            m=A[i]
+print(m, sep=' ', end=' ')

@@ -1,0 +1,8 @@
+f=open('upr99', 'r')
+z=f.read()
+x=list(z)
+k=1
+for i in range(0,len(x)-1):
+    if (x[i]=='.' or x[i]=='!' or x[i]=='?') and x[i+1]==' ':
+        k=k+1
+print(k)
