@@ -1,7 +1,0 @@
-A=input().split(' ')
-k=-2
-for i in range (0, len(A)):
-    A[i]=int(A[i])
-print(A[len(A)-1], sep=' ', end=' ')
-for i in range(0,len(A)-1):
-    print (A[i], sep=' ', end=' ')
