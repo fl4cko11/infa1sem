@@ -1,0 +1,11 @@
+def simp(n):
+    i=2
+    if n!=1:
+        while n%i!=0:
+            i=i+1
+        print(i)
+        return(simp(n//i))
+    if n==1:
+        print('stop')
+n=int(input())
+print(simp(n))

@@ -1,0 +1,8 @@
+A=input().split(' ')
+k=-2
+for i in range (0, len(A)):
+    A[i]=int(A[i])
+for i in range (0, (len(A)//2)):
+    k=k+2
+    print(A[k+1], A[k], sep=' ', end=' ')
+#если надо добавить в список, то просто апенд в пустой и так же шагать по индексам 

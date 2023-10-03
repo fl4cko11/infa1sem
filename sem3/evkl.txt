@@ -1,0 +1,11 @@
+def f(a, b, d, x, y):
+    if b == 0:
+        return 1, 0, a
+    x, y, d = f(b, a % b, d, x, y)
+    x, y = y, x - (a // b) * y
+    return x, y, d
+
+
+a, b = map(int, input().split())
+x, y, d = f(a, b, 0, 0, 0)
+print(x, y, d)
