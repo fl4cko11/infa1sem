@@ -33,7 +33,7 @@ def click_handler(event):
 
 root = Tk()     # создаем корневой объект - окно
 root.title("Шары модерн")     # устанавливаем заголовок окна
-root.geometry("1000x1000")    # устанавливаем размеры окна
+root.geometry("300x200")    # устанавливаем размеры окна
 root.resizable(False, False)
 canvas = Canvas(root)
 canvas.pack()
